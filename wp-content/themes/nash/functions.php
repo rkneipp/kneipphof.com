@@ -139,7 +139,16 @@ function gt_widgets_init() {
     'before_title' => '<header><h4 class="widget-title">',
     'after_title' => '</h4></header>',
   ));
-
+  
+    register_sidebar( array(
+    'name' => 'Project Sidebar',
+    'id' => 'sidebar-project',
+    'before_widget' => '<div id="%1$s" class="widget %2$s">',
+    'after_widget' => "</div>",
+    'before_title' => '<header><h4 class="widget-title">',
+    'after_title' => '</h4></header>',
+  ));
+  
 }
 
 add_action( 'init', 'gt_widgets_init' );

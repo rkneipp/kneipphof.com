@@ -106,9 +106,7 @@ jQuery(document).ready(function () {
 </script>
 
 <!--<SCRIPT language="javascript">
-<!--
 	window.document.onload=window.location.href='#header-global';
-//-->
 </SCRIPT>-->
 
 <?php if ($data['text_twitter_username']) { ?>

@@ -21,6 +21,9 @@
 }
 
 body p,
+.pag_box,
+#testoEvento,
+#dataEvento,
 .accordion-content,
 ul.tabs-content,
 .toggle_container,
@@ -81,6 +84,7 @@ select,
 #main h4,
 #main h5,
 #main h6,
+.title a,
 #footer-global h1,
 #single-project h1, 
 #single-project h2, 
@@ -206,6 +210,8 @@ input[type="button"] {
 	background-color: <?php echo $data['accent_color_button']; ?>;
 }
 
+.pag_box a,
+.title a:hover,
 #content p a,
 .service p a,
 .team-member p a,

@@ -1,0 +1,118 @@
+.box-mappa {
+/*background-clip: padding-box;
+background-origin: padding-box;
+background-size: auto;*/
+display: block;
+padding:1em;
+overflow: hidden;
+}
+
+#map_canvas {
+	height:400px;
+	border-radius: 4px;
+	box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 4px 0px;
+}
+
+
+.select {
+	width: 78%;
+	display: inline-block;
+	position: relative;
+	color: rgb(51, 51, 51);
+	font-family: Helvetica, Arial, sans-serif;
+	text-shadow: rgb(255, 255, 255) 0px 0px 0px;
+}
+
+#map-canvas {
+	-webkit-transform: matrix(1, 0, 0, 1, 0, 0);
+	background-color: rgb(229, 227, 223);
+	color: rgb(51, 51, 51);
+	display: block;
+	font-family: Helvetica, Arial, sans-serif;
+	height: 400px;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	position: relative;
+	text-shadow: rgb(255, 255, 255) 0px 0px 0px;
+	width: 1154.6875px;
+}
+
+.blocco-campo {
+	clear: both;
+	color: rgb(51, 51, 51);
+	display: block;
+	font-family: Helvetica, Arial, sans-serif;
+	height: 40px;
+	max-width: 100%;
+	overflow-x: visible;
+	overflow-y: visible;
+	position: relative;
+	text-shadow: rgb(255, 255, 255) 0px 0px 0px;
+	width: 100%;
+	margin-top: 15px;}
+	
+label {
+	color: rgb(51, 51, 51);
+	font-size: 16px;
+	line-height: 1.4;
+	text-shadow: rgb(255, 255, 255) 0px 0px 0px;
+	width: 20%;
+	padding: .4em;
+	margin-right: 2%;
+}
+	
+input {
+	background-color: rgb(249, 249, 249);
+	border-radius: 6px;
+	box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 4px 0px inset;
+	box-sizing: border-box;
+	color: rgb(51, 51, 51);
+	text-shadow: rgb(255, 255, 255) 0px 0px 0px;
+	width: 78%;
+	padding: .4em;
+	float: right;
+	font-size: 16px;
+	line-height: 1.4;
+	border: 1px solid rgb(204, 204, 204);
+}
+
+
+.ui-btn {
+	background-attachment: scroll;
+	background-clip: padding-box;
+	background-color: rgb(238, 238, 238);
+	background-image: -webkit-linear-gradient(top, rgb(255, 255, 255), rgb(241, 241, 241));
+	background-origin: padding-box;
+	background-size: auto;
+	border-radius: 6px;
+	color: rgb(34, 34, 34);
+	cursor: pointer;
+	display: block;
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	height: 36px;
+	margin-bottom: 8px;
+	margin-top: 12px;
+	width: 100%;
+	border: 1px solid rgb(204, 204, 204);
+}
+
+.box-mappa a {
+	text-align: center;
+	text-decoration: none;
+	width: 100%;
+	font-size: 16px;
+	text-shadow: rgb(255, 255, 255) 0px 0px 0px;
+	line-height: 38px;
+	position: relative;
+	top: 6px;
+}
+
+}
+
+@media only screen and (max-width: 480px) {
+	input,
+	label {
+		width: 100%;
+	}
+	}

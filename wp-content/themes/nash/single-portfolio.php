@@ -50,42 +50,16 @@ get_header(); ?>
 				}
 				?>
 				
-				<div class="row">
 				
-					<div class="eleven columns alpha">
+					<div class="sixteen columns">
 
 						<?php the_content(); ?>
 						
 					<?php endwhile; endif; ?>
 	
-					</div><!-- end .eleven columns alpha -->
+					</div>
 					
-					<div class="four columns offset-by-one omega">
-							
-						<ul class="client-details">
-						<?php if (get_post_meta($post->ID, 'gt_client_name', true)) { ?>
-							<li><strong><i class="icon-user"></i></strong> <?php echo get_post_meta($post->ID, 'gt_client_name', true) ?></li>
-						<?php } if (get_post_meta($post->ID, 'gt_project_date', true)) { ?>
-							<li><strong><i class="icon-calendar"></i></strong> <?php echo get_post_meta($post->ID, 'gt_project_date', true) ?></li>
-						<?php } ?>
-						</ul>
-						
-						<?php if (get_post_meta($post->ID, 'gt_project_checklist', true)) { ?>
-						<ul class="project-checklist">
-						<?php $figures = explode(',',get_post_meta($post->ID, 'gt_project_checklist', true));
-						     if($figures) {
-						         foreach ($figures as $figure) { ?>
-							<li><strong><i class="icon-check"></i></strong> <em><?php echo $figure; ?></em></li>
-							<?php }
-						} ?>
-						</ul>
-						<?php } ?>
-	
-						<?php if (get_post_meta($post->ID, 'gt_project_url', true)) { ?>
-						<a href="<?php echo get_post_meta($post->ID, 'gt_project_url', true) ?>" class="launch-project-btn"><?php echo $data['text_project_button_title']; ?> &rarr;</a>
-						<?php } ?>
-	
-					</div><!-- end .four columns offset-by-one omega -->
+			
 				
 				</div><!-- end .row -->
 				

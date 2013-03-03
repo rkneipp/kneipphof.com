@@ -3,6 +3,9 @@
 	<?php if (is_page()): ?>
 		<?php if ( function_exists('dynamic_sidebar') && dynamic_sidebar('Page Sidebar') ) : else : ?>
 		<?php endif; ?>
+	<?php elseif ( 'portfolio' == get_post_type() ): ?>
+		<?php if ( function_exists('dynamic_sidebar') && dynamic_sidebar('Project Sidebar') ) : else : ?>
+		<?php endif; ?>
 	<?php else: ?>
 		<?php if ( function_exists('dynamic_sidebar') && dynamic_sidebar('Blog Sidebar') ) : else : ?>
 		<?php endif; ?>

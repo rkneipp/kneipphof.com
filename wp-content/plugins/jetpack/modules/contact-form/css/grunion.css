@@ -1,5 +1,5 @@
 .contact-form .clear-form { clear: both; }
-.contact-form input[type='text'], .contact-form input[type='email'] { width: 80%; margin-bottom: 13px; }
+.contact-form input[type='text'], .contact-form input[type='email'] { width: 300px; margin-bottom: 13px; }
 .contact-form select { margin-bottom: 13px; }
 .contact-form textarea { height: 200px; width: 80%; float: none; margin-bottom: 13px; }
 .contact-form input[type='radio'], .contact-form input[type='checkbox'] { float: none; margin-bottom: 13px; }
@@ -8,11 +8,3 @@
 .contact-form label span { color: #AAA; margin-left: 4px; font-weight: normal; }
 .form-errors .form-error-message { color: red; }
 .textwidget input[type='text'], .textwidget input[type='email'], .textwidget textarea { width: 250px; }
-
-
-@media only screen and (max-width: 767px) {
-	.contact-form input[type='text'], .contact-form input[type='email'] { width: 100%; margin-bottom: 13px; }
-	.contact-form textarea { height: 200px; width: 100%; float: none; margin-bottom: 13px; }
-
-
-}

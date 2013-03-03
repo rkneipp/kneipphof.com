@@ -10,6 +10,7 @@
 	
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/dynamic-css/options.css">
+	<link href="http://get.pictos.cc/fonts/3933/1" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" href="/extra/kneipp.css">
 	<!-- Meta
 	================================================== -->
@@ -32,8 +33,21 @@
 	<link rel="apple-touch-icon" sizes="114x114" href="<?php get_template_directory_uri(); ?>assets/img/apple-touch-icon-114x114.png">
 	
 <?php wp_head(); ?>
-	
 
+<script language="JavaScript">
+<!--
+function calcHeight()
+{
+  //find the height of the internal page
+  var the_height=
+    document.getElementById('the_iframe').contentWindow.
+      document.body.scrollHeight;
+
+  //change the height of the iframe
+  document.getElementById('the_iframe').height=
+      the_height;
+}
+//-->
 </script>
 
 </head>

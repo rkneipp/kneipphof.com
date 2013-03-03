@@ -239,7 +239,7 @@ get_header(); ?>
 			
 				<?php if ($data['text_services_title']) { ?>
 				<div class="icon-holder services">
-					<?php echo do_shortcode(stripslashes($data['icon_services'])); ?>
+					<?php echo $data['icon_services']; ?>
 				</div>
 				
 				<h1><?php echo $data['text_services_title']; ?></h1>
