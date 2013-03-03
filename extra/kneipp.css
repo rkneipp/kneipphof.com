@@ -1,0 +1,43 @@
+/*DL, DT, DD TAGS LIST DATA*/
+dl {
+	margin-bottom: 50px;
+}
+
+dl dt {
+	background: rgba(200,200,200,0.15);
+	box-shadow: rgba(0,0,0,0.3) 0 0 3px;
+	text-align: right;
+	float: left;
+	display: block;
+	font-weight: bold;
+	margin-right: 8px;
+	padding: 3px 10px;
+	width: 30%;
+}
+
+dl dd {
+	box-shadow: rgba(0,0,0,0.3) 0 0 3px;
+	border-radius: 2px;
+	margin: 8px 0;
+	padding: 3px 8px;
+	overflow: hidden;
+}
+
+@media only screen and (max-width: 480px) {
+	dl dt {
+		float: none;
+		display: inline-block;
+		width: 208px;
+		text-align: left;
+		margin-top: 5px;
+		margin-bottom: 0;
+	}
+	dl dd {
+		margin-top: 1px;
+	}
+}
+
+dl dt:hover + dd,
+dl dd:hover  {
+	background: rgba(200,200,200,0.15);
+}
